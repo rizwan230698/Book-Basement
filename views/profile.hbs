@@ -1,0 +1,18 @@
+   <p id="name"><span>Username : </span>{{username}}</p>
+    <p id="email"><span>Email : </span>{{email}}</p>
+    <p id="booksPosted">My Books &nbsp &nbsp<span><i class="fa fa-chevron-right"></i></span></p>
+    <p id="noBooks">No Books Posted For Sell yet.</p>
+<div class="container-fluid">
+    {{#each data}}
+    <a href="/profile/{{this._id}}">
+<div class="card">
+  <img class="card-img-top" src="{{this.image}}" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="profile-card-title">{{this.title}}</h5>
+    <p class="card-text">RS {{this.price}}</p>
+  </div>
+</div>
+</a>
+    {{/each}}
+
+</div>

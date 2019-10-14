@@ -1,0 +1,14 @@
+<div class="container bookDiv">
+  {{#each data}}
+<img id="bookImage" src={{this.image}} alt="Book Image">
+<a href="mailto:{{this.email}}" target="_blank" class="btn btn-danger">Buy Book</a>
+<p id="mail"><small>Contact book owner through mail.</small></p>
+<div id="text">
+<p id="bookTitle">{{this.title}}</p>
+<p id="bookAuthor"><span class="heading">Author : </span>{{this.author}}</p>
+<p id="bookDescription">{{this.description}}</p>
+</div>
+<p id="price"><span class="heading">Price : </span>Rs {{this.price}}</p>
+<p id="EMAIL" style="display: none">{{this.email}}</p>
+{{/each}}
+</div>

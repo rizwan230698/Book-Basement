@@ -1,0 +1,41 @@
+ body{
+    background-color: #000000;
+    font-family: 'Lato', sans-serif;
+} 
+.navbar{
+    background-color: #CB202D;
+    margin-bottom: 10px
+}
+#brandIcon{
+    font-size: 25px
+}
+.card,.card-body,.card-title,.card-text,.card-img-top{
+    margin:0px;
+    padding: 0%;
+    text-align: center
+}
+.card-img-top{
+    width:100%;
+    height:200px;
+    border-radius: 0px
+}
+.card{
+   max-width: 160px;
+   min-width: 160px;
+   max-height: 250px;
+   min-height: 250px;
+   background-color: white; 
+   color:#000000;
+   box-shadow: 0 0 10px #000000;
+   border-radius: 0px;
+   border: none;
+   margin : 10px 20px;
+   display: inline-block;
+}
+.card:hover{
+    box-shadow: 0 0 5px 1px rgba(255,255,255,0.3);
+    text-shadow: 1px 1px 3px
+}
+a:hover{
+    text-decoration: none
+}

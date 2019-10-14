@@ -1,0 +1,86 @@
+body{
+    background-color: #000000
+}
+.navbar{
+    background-color: #CB202D;
+}
+#brandIcon{
+    font-size: 25px
+}
+#navSell,#navProfile,#navLogout{
+    display: none
+}
+ #headerImg{
+     height: 30vh;
+    position: relative;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/collection-images/header.jpg");
+    background-size: contain;
+}
+#headerImg p{
+    color: #fff;
+font-family: 'Raleway', sans-serif;
+    position: absolute;
+    top: 85px;
+    left: 25px;
+    text-shadow: 2px 2px 2px #000000
+} 
+table{
+    position: absolute;
+    top: 231px;
+    left:654px;
+    transform: translateX(-50%)
+}
+table .collectionImg{
+    height:150px;
+    width:100px
+}
+#leftSideImage{
+    position: absolute;
+    left:4px;
+    top:280px;
+    width:245px;
+    height:400px
+}
+p{
+    line-height: 1.2;
+    text-shadow: 2px 2px 2px #000000
+}
+ #pOne{
+    font-family: 'Notable', sans-serif;
+    color: #45DABA;
+    font-size: 30px
+}
+#pTwo{
+    font-family: 'Josefin Slab', serif;
+    color: #fff;
+    font-size:30px;
+}
+#pThree{
+    background-color: #CB202D;
+    color:#fff;
+    font-size: 18px;
+    font-family: sans-serif;
+    width: 175px;
+    margin-left: 15px;
+    padding:2px
+}
+#pFour{
+    color:#fff;
+    font-family: 'Baloo', cursive;
+    font-size:40px;
+    margin-left:8px
+}
+#pFive{
+    margin-top: -15px;
+    color:#45DABA;
+    font-family: 'Patrick Hand', cursive;
+    font-size:60px
+}
+#rightSideImage{
+    position: absolute;
+    right:0%;
+    top:231px;
+    width:198px;
+    height:400px;
+    box-shadow: -2px -2px 2px #000000
+}

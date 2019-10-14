@@ -1,0 +1,28 @@
+body{
+    background-color: #000000;
+    font-family: 'Lato', sans-serif;
+}
+.navbar{
+    background-color: #CB202D;
+}
+#brandIcon{
+    font-size: 25px
+}
+#sellForm{
+    position: absolute;
+    color:#fff;
+    right:35%;
+    top:15%;
+}
+.bookDescription,.sellerEmail{
+    color: #fff;
+}
+.sellButton{
+    color:#fff;
+background-color: #CB202D;
+width: 80px
+}
+.sellButton:hover{
+    color:#fff;
+    background-color: #C82333
+}

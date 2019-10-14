@@ -1,0 +1,69 @@
+  
+    
+<div class="container" id="main">
+  {{#each data}}
+<img id="bookImage" src={{this.image}} alt="Book Image">
+<div id="text">
+<p id="bookTitle">{{this.title}}</p>
+<p id="bookAuthor"><span class="heading">Author : </span>{{this.author}}</p>
+<p id="bookDescription">{{this.description}}</p>
+</div>
+<p id="price"><span class="heading">Price : </span>Rs {{this.price}}</p>
+<a href="/profile/delete/{{this._id}}" class="btn btn-danger deleteBookButton">Delete Book</a>
+<button class="btn btn-danger editBookButton">Edit Book</button>
+
+<div class="formDiv">
+     <form id="deleteForm" action="/profile/edit/{{this._id}}" method="POST">
+        <div class="form-group row">
+          <div class="col-2">
+          </div>
+          <div class="col-10">
+            <input
+              type="text"
+              name="title"
+              class="form-control bookTiltle"
+              placeholder="Book Title"
+            required/>
+          </div>
+        </div>
+          <div class="form-group row">
+          <div class="col-2">
+          </div>
+          <div class="col-10">
+            <input
+              type="text"
+              name="author"
+              class="form-control bookAuthor"
+              placeholder="Book Author"
+            required/>
+          </div>
+        </div>
+          <div class="form-group row">
+          <div class="col-2">
+          </div>
+          <div class="col-10">
+            <input
+              type="text"
+              name="description"
+              class="form-control bookDescription"
+              placeholder="Book Description"
+            required/>
+          </div>
+        </div>
+         <div class="form-group row">
+          <div class="col-2">
+          </div>
+          <div class="col-10">
+            <input
+              type="number"
+              name="price"
+              class="form-control bookPrice"
+              placeholder="Book Price"
+            required/>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-danger formEditButton">Update</button>
+      </form>
+      </div>
+{{/each}}
+</div>

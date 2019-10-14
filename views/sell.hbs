@@ -1,0 +1,99 @@
+<div
+      class="container"
+    >
+      <form id="sellForm" action="/sellbooks/upload" method="POST" enctype="multipart/form-data">
+<div class="form-group row">
+            <div class="col-4">
+                <label for="sellemail">Email</label>
+            </div>
+         <div class="col-8">
+                <input
+                type="email"
+                name="email"
+                class="form-control"
+                id="sellemail"
+                placeholder="Email Adrress"
+              required/>
+              <p class="sellerEmail"><small>Use the Email displayed on your profile. Buyer will contact you through Email.</small></p>
+         </div>
+        </div>
+
+        <div class="form-group row">
+          <div class="col-4">
+            <label for="selltitle">Title</label>
+          </div>
+          <div class="col-8">
+            <input
+              type="text"
+              name="title"
+              class="form-control"
+              id="selltitle"
+              placeholder="Book Title"
+            required/>
+          </div>
+        </div>
+
+          <div class="form-group row">
+          <div class="col-4">
+            <label for="sellauthor">Author</label>
+          </div>
+          <div class="col-8">
+            <input
+              type="text"
+              name="author"
+              class="form-control"
+              id="sellauthor"
+              placeholder="Book Author"
+            required/>
+          </div>
+        </div>
+
+<div class="form-group row">
+          <div class="col-4">
+            <label for="selldescription">Description</label>
+          </div>
+          <div class="col-8">
+            <input
+              type="text"
+              name="description"
+              class="form-control"
+              id="selldescription"
+              placeholder="Book Description"
+            required/>
+            <p class="bookDescription"><small>Include Book description, condition and reason for selling.</small></p>
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <div class="col-4">
+            <label for="sellprice">Price</label>
+          </div>
+          <div class="col-8">
+            <input
+              type="number"
+              name="price"
+              class="form-control"
+              id="sellprice"
+              placeholder="Price"
+           required/>
+          </div>
+        </div>
+
+<div class="form-group row">
+            <div class="col-4">
+                <label for="sellphoto">Photo</label>
+            </div>
+         <div class="col-8">
+                <input
+                type="file"
+                name="image"
+                class="form-control-file"
+                id="sellphoto"
+                placeholder="Photo"
+              required/>             
+         </div>
+        </div>
+
+        <button type="submit" class="btn sellButton">Sell</button>
+      </form>
+    </div>

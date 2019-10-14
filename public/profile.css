@@ -1,0 +1,58 @@
+body{
+    background-color: #000000 ;
+    font-family: 'lato', sans-serif;
+    color: #fff
+}
+.navbar{
+    background-color: #CB202D;
+    margin-bottom: 20px
+}
+#brandIcon{
+    font-size: 25px
+}
+span{
+    font-size: 20px
+}
+span i{
+    color: white;
+}
+#name,#email,#booksPosted{
+    margin-left: 20px;
+    font-size: 18px;
+    text-align:center
+}
+.card,.card-body,.profile-card-title,.card-img-top,#noBooks{
+    margin:0px;
+    padding: 0%;
+    text-align: center
+}
+.card-img-top{
+    width:100%;
+    height:200px;
+    border-radius: 0px
+}
+.card{
+   max-width: 160px;
+   min-width: 160px;
+   max-height: 250px;
+   min-height: 250px;
+   background-color: white; 
+   color:#000000;
+   box-shadow: 0 0 10px #000000;
+   border-radius: 0px;
+   border: none;
+   margin : 10px 20px;
+   display: inline-block;
+}
+.card:hover{
+    box-shadow: 0 0 5px 1px rgba(255,255,255,0.3);
+    text-shadow: 1px 1px 3px
+}
+a:hover{
+    text-decoration: none
+}
+#noBooks{
+    display: none;
+    color: #CB202D;
+    font-size: 18px   
+}

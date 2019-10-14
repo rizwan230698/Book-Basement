@@ -1,0 +1,66 @@
+body{
+    background-color: #000000 ;
+    font-family: 'Raleway', sans-serif;
+    color: #fff
+}
+.navbar{
+    background-color: #CB202D;
+    margin-bottom: 20px
+}
+#brandIcon{
+    font-size: 25px
+}
+#bookImage{
+    position: absolute;
+    height: 400px;
+    width:250px;
+
+}
+#bookImage:hover{
+ box-shadow: -1px -1px 8px  #CB202D
+}
+
+#text{
+    position: absolute;
+    width:650px;
+    height: 500px;
+    left: 400px;
+    font-size:20px
+}
+.heading{
+    color:#fff;
+    font-size:20px
+}
+#bookAuthor{
+    color:#CB202D
+}
+#price{
+    position: absolute;
+    right: 220px;
+    font-size:20px;
+    font-family: 'lato', sans-serif;
+}
+#bookDescription{
+    font-size: 16px;
+line-height: 150%
+}
+.editBookButton{
+    position: absolute;
+    top:500px;
+    left: 80px
+}
+.deleteBookButton{
+    position: absolute;
+    top:500px;
+    left:200px
+}
+.formDiv{
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    display:none;
+}
+.formEditButton{
+    margin-left: 38%;
+
+}
