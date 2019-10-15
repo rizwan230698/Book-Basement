@@ -17,7 +17,11 @@ And in case you want to sell your old book fill the sell form and your book will
 * MongoDB
 * Handlebars
 * Cloudinary
-(/public/collection-images/landingPage.PNG)
-(/public/collection-images/homePage.PNG)
-(/public/collection-images/book.PNG)
+
+
+![alt text](/public/collection-images/landingPage.PNG)
+
+![alt text](/public/collection-images/homePage.PNG)
+
+![alt text](/public/collection-images/book.PNG)
 
