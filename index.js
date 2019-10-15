@@ -40,4 +40,4 @@ app.use("/book", bookRouter)
 app.use("/profile", profileRouter)
 
 
-app.listen(3000)
+app.listen(process.env.PORT||3000)
