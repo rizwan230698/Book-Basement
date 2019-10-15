@@ -19,9 +19,9 @@ And in case you want to sell your old book fill the sell form and your book will
 * Cloudinary
 
 
-![alt text](./public/collection-images/landingPage.PNG)
+![alt text](/public/screenshots/landingPage.png)
 
-![alt text](./public/collection-images/homePage.PNG)
+![alt text](/public/screenshots/homePage.png)
 
-![alt text](./public/collection-images/book.PNG)
+![alt text](/public/screenshots/book.png)
 
