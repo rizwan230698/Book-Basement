@@ -14,3 +14,6 @@
 *Handlebars
 *Cloudinary
 (/public/collection-images/landingPage.PNG)
+(/public/collection-images/homePage.PNG)
+(/public/collection-images/book.PNG)
+
