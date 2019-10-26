@@ -109,7 +109,7 @@ body{
     
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/collection-images/header.jpg");
     background-size: contain;
-    flex-basis: 30vh
+    flex-basis: 25vh
    
 
 }
@@ -119,7 +119,10 @@ font-family: 'Raleway', sans-serif;
     text-shadow: 2px 2px 2px #000000
 } 
 table{
+    flex-grow: 1;
 order:0;
+display:flex;
+justify-content: center
 
 
 }
@@ -132,7 +135,8 @@ table .collectionImg{
     /* width:245px; */
   
     order:-1;
-    flex-basis: 20%
+    flex-basis: 20%;
+    height:auto
 
 }
 p{
@@ -174,15 +178,15 @@ p{
 
     /* width:198px; */
     margin-top:1px;
+    margin-left:1px;
     height:400px;
     box-shadow: 2px 2px 2px #000000;
     order:1;
-    flex-basis: 5%
+    flex-basis: 15%
 }
 main{
 flex-basis: 60vh;
     display:flex;
-
     flex-wrap: nowrap;
     justify-content: space-around
 
@@ -191,7 +195,12 @@ flex-basis: 60vh;
 
 @media(max-width: 1024px){
 main{
-        justify-content:center;
-        flex-wrap: wrap
+    flex-direction:column;
+        align-items:center;
+        flex-wrap: nowrap
+        }
+
+        #headerImg{
+            flex-basis:10vh
         }
 }
