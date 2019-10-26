@@ -1,4 +1,4 @@
-body{
+/* body{
     background-color: #000000
 }
 .navbar{
@@ -83,4 +83,115 @@ p{
     width:198px;
     height:400px;
     box-shadow: -2px -2px 2px #000000
+} */
+body{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    background-color: #000000;
+   
+    display:flex;
+    flex-direction:column;
+    flex-wrap: nowrap;
+}
+.navbar{
+    background-color: #CB202D;
+
+
+}
+#brandIcon{
+    font-size: 25px
+}
+#navSell,#navProfile,#navLogout{
+    display: none
+}
+ #headerImg{
+    
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/collection-images/header.jpg");
+    background-size: contain;
+    flex-basis: 30vh
+   
+
+}
+#headerImg p{
+    color: #fff;
+font-family: 'Raleway', sans-serif;
+    text-shadow: 2px 2px 2px #000000
+} 
+table{
+order:0;
+
+
+}
+table .collectionImg{
+    height:150px;
+    width:100px;
+}
+#leftSideImage{
+   
+    /* width:245px; */
+  
+    order:-1;
+    flex-basis: 20%
+
+}
+p{
+    line-height: 1.2;
+    text-shadow: 2px 2px 2px #000000
+}
+ #pOne{
+    font-family: 'Notable', sans-serif;
+    color: #45DABA;
+    font-size: 30px
+}
+#pTwo{
+    font-family: 'Josefin Slab', serif;
+    color: #fff;
+    font-size:30px;
+}
+#pThree{
+    background-color: #CB202D;
+    color:#fff;
+    font-size: 18px;
+    font-family: sans-serif;
+    width: 175px;
+    margin-left: 15px;
+    padding:2px
+}
+#pFour{
+    color:#fff;
+    font-family: 'Baloo', cursive;
+    font-size:40px;
+    margin-left:8px
+}
+#pFive{
+    margin-top: -15px;
+    color:#45DABA;
+    font-family: 'Patrick Hand', cursive;
+    font-size:60px
+}
+#rightSideImage{
+
+    /* width:198px; */
+    margin-top:1px;
+    height:400px;
+    box-shadow: 2px 2px 2px #000000;
+    order:1;
+    flex-basis: 5%
+}
+main{
+flex-basis: 60vh;
+    display:flex;
+
+    flex-wrap: nowrap;
+    justify-content: space-around
+
+ 
+}
+
+@media(max-width: 1024px){
+main{
+        justify-content:center;
+        flex-wrap: wrap
+        }
 }
