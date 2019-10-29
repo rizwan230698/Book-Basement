@@ -109,14 +109,17 @@ body{
     
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/collection-images/header.jpg");
     background-size: contain;
-    flex-basis: 25vh
+    flex-basis: 25vh;
+    display:flex;
+    align-items: flex-end
    
 
 }
 #headerImg p{
     color: #fff;
 font-family: 'Raleway', sans-serif;
-    text-shadow: 2px 2px 2px #000000
+    text-shadow: 2px 2px 2px #000000;
+  
 } 
 table{
     flex-grow: 1;
