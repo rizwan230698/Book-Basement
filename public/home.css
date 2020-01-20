@@ -1,41 +1,63 @@
- body{
-    background-color: #000000;
-    font-family: 'Lato', sans-serif;
-} 
-.navbar{
-    background-color: #CB202D;
-    margin-bottom: 10px
+body {
+  background-color: #000000;
+  font-family: "Lato", sans-serif;
 }
-#brandIcon{
-    font-size: 25px
+.navbar {
+  background-color: #cb202d;
+  margin-bottom: 10px;
 }
-.card,.card-body,.card-title,.card-text,.card-img-top{
-    margin:0px;
-    padding: 0%;
-    text-align: center
+#brandIcon {
+  font-size: 25px;
 }
-.card-img-top{
-    width:100%;
-    height:200px;
-    border-radius: 0px
+.card,
+.card-body,
+.card-title,
+.card-text,
+.card-img-top {
+  margin: 0px;
+  padding: 0%;
+  text-align: center;
 }
-.card{
-   max-width: 160px;
-   min-width: 160px;
-   max-height: 250px;
-   min-height: 250px;
-   background-color: white; 
-   color:#000000;
-   box-shadow: 0 0 10px #000000;
-   border-radius: 0px;
-   border: none;
-   margin : 10px 20px;
-   display: inline-block;
+.card-img-top {
+  width: 100%;
+  height: 200px;
+  border-radius: 0px;
 }
-.card:hover{
-    box-shadow: 0 0 5px 1px rgba(255,255,255,0.3);
-    text-shadow: 1px 1px 3px
+.card {
+  max-width: 160px;
+  min-width: 160px;
+  max-height: 250px;
+  min-height: 250px;
+  background-color: white;
+  color: #000000;
+  box-shadow: 0 0 10px #000000;
+  border-radius: 0px;
+  border: none;
+  margin: 10px 15px;
+  display: inline-block;
 }
-a:hover{
-    text-decoration: none
+
+.card:hover {
+  box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.3);
+  text-shadow: 1px 1px 3px;
+}
+a:hover {
+  text-decoration: none;
+}
+.container-fluid {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 576px) {
+  .container-fluid {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
 }
