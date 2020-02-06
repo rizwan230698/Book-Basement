@@ -4,11 +4,11 @@ var app = express();
 var session = require("express-session");
 var hbs = require("hbs");
 var mongoClient = require("mongodb").MongoClient;
-var loginRouter = require("./login-router");
-var homeRouter = require("./home-router");
-var sellRouter = require("./sell-router");
-var bookRouter = require("./book-router");
-var profileRouter = require("./profile-router");
+var loginRouter = require("./routes/login-router");
+var homeRouter = require("./routes/home-router");
+var sellRouter = require("./routes/sell-router");
+var bookRouter = require("./routes/book-router");
+var profileRouter = require("./routes/profile-router");
 var url =
   "mongodb+srv://rizwan:rizwan123@rizwan-cluster-g7cq1.azure.mongodb.net/?retryWrites=true&w=majority"; //process.env.MONGO_URL
 mongoClient.connect(
@@ -29,8 +29,13 @@ app.use(
     secret: "blue rose"
   })
 );
-
 app.use(express.static("public"));
+
+app.use("/login", loginRouter);
+app.use("/home", homeRouter);
+app.use("/sellbooks", sellRouter);
+app.use("/book", bookRouter);
+app.use("/profile", profileRouter);
 
 app.get("/", function(req, res) {
   res.render("landing.hbs", {
@@ -39,10 +44,8 @@ app.get("/", function(req, res) {
     script: "landing.js"
   });
 });
-app.use("/login", loginRouter);
-app.use("/home", homeRouter);
-app.use("/sellbooks", sellRouter);
-app.use("/book", bookRouter);
-app.use("/profile", profileRouter);
 
-app.listen(process.env.PORT || 3000);
+var PORT = 3000;
+app.listen(process.env.PORT || PORT, function() {
+  console.log("App now listening at port " + PORT);
+});
