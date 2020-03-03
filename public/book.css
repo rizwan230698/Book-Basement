@@ -1,54 +1,75 @@
-body{
-    background-color: #000000 ;
-    font-family: 'Raleway', sans-serif;
-    color: #fff
+body {
+  background-color: #000000;
+  font-family: "Raleway", sans-serif;
+  color: #fff;
 }
-.navbar{
-    background-color: #CB202D;
-    margin-bottom: 20px
+.navbar {
+  background-color: #cb202d;
+  margin-bottom: 20px;
 }
-#brandIcon{
-    font-size: 25px
+#brandIcon {
+  font-size: 25px;
 }
-#bookImage{
-    position: absolute;
-    height: 400px;
-    width:250px;
+.bookDiv {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+.content {
+  padding: 20px 40px;
+}
+@media screen and (max-width: 980px) {
+  .bookDiv {
+    width: 100%;
+    padding: 5px 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+#bookImage {
+  height: 400px;
+  margin: 0 30px 20px;
+}
+#bookImage img {
+  height: 100%;
+}
+@media screen and (max-width: 980px) {
+  #bookImage {
+    height: 200px;
+  }
+}
+#bookImage:hover {
+  box-shadow: -1px -1px 8px #cb202d;
+}
+#book-details {
+  padding: 10px 0;
+  max-width: 600px;
+}
+#bookTitle {
+  margin-bottom: 20px;
+}
+#bookAuthor {
+  margin-bottom: 10px;
+  color: #cb202d;
+}
+#bookAuthor span {
+  color: #fff;
+}
 
+#action-btn {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 25px 15px;
 }
-#bookImage:hover{
- box-shadow: -1px -1px 8px  #CB202D
+@media screen and (max-width: 980px) {
+  #action-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
-#text{
-    position: absolute;
-    width:650px;
-    height: 500px;
-    left: 400px;
-    font-size:20px
-}
-.heading{
-    color:#fff;
-    font-size:20px
-}
-#bookAuthor{
-    color:#CB202D
-}
-#price{
-    position: absolute;
-    right: 220px;
-    font-size:20px;
-    font-family: 'lato', sans-serif;
-}
-#bookDescription{
-    font-size: 16px;
-line-height: 150%
-}
-.btn{
-    position: absolute;
-    top:490px
-}
-#mail{
-    position:absolute;
-    top:535px
-}
+/* font-family: "lato", sans-serif; */

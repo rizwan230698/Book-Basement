@@ -1,109 +1,150 @@
-body{
-    background-color: #000000;
-    font-family: 'Lato', sans-serif;
+body {
+  background-color: #000000;
+  font-family: "Lato", sans-serif;
 }
-.navbar{
-    background-color: #CB202D;
+.navbar {
+  background-color: #cb202d;
 }
-#brandIcon{
-    font-size: 25px
+#brandIcon {
+  font-size: 25px;
 }
-#navSell,#navProfile{
-    display: none
+#navSell,
+#navProfile {
+  display: none;
 }
 /* BIG BUTTONS */
-#loginButton{
-    position: absolute;
-    left: 20%;
-    top: 45%;
-    transform: translateY(-50%);
-  
+#loginButton {
+  position: absolute;
+  left: 20%;
+  top: 45%;
+  transform: translateY(-50%);
 }
-#signupButton{
-    position: absolute;
-    right: 20%;
-    top: 45%;
-    transform: translateY(-50%);
-   
+@media screen and (max-width: 900px) {
+  #loginButton {
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
-.bigButton{
-    border: 1px solid #CB202D;
-    background: none;
-    padding: 10px 20px;
-    font-size: 40px;
-    color: #CB202D;
-    width:200px;
-    transition: 0.8s;
-    overflow: hidden;
+#signupButton {
+  position: absolute;
+  right: 20%;
+  top: 45%;
+  transform: translateY(-50%);
 }
-.bigButton:active{
-    outline:none
+@media screen and (max-width: 900px) {
+  #signupButton {
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
-.bigButton:hover{
-    color: #fff;
-
+.bigButton {
+  border: 1px solid #cb202d;
+  background: none;
+  padding: 10px 20px;
+  font-size: 40px;
+  color: #cb202d;
+  width: 200px;
+  transition: 0.8s;
+  overflow: hidden;
 }
-.bigButton::before{
-    content: "";
-    position: absolute;
-    left:0;
-    width:100%;
-    height: 100%;
-    background: #CB202D;
-    z-index: -1;
-    transition: 0.8s
+.bigButton:active {
+  outline: none;
 }
- #loginButton::before{
-top:0;
-border-radius: 0 0 50% 50%;
+.bigButton:hover {
+  color: #fff;
 }
-#signupButton::before{
-    bottom:0;
-    border-radius: 50% 50% 0 0
-    }
-.bigButton::before{
-    height:0%;
-} 
-.bigButton:hover::before{
-    height:190%;
+.bigButton::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #cb202d;
+  z-index: -1;
+  transition: 0.8s;
 }
-.arrowIcon{
-    font-size: 30px;
+#loginButton::before {
+  top: 0;
+  border-radius: 0 0 50% 50%;
+}
+#signupButton::before {
+  bottom: 0;
+  border-radius: 50% 50% 0 0;
+}
+.bigButton::before {
+  height: 0%;
+}
+.bigButton:hover::before {
+  height: 190%;
+}
+.arrowIcon {
+  font-size: 30px;
 }
 /* FORM */
-form{
-    position: absolute;
-    color:#fff;
-    display: none
+form {
+  position: absolute;
+  color: #fff;
+  display: none;
 }
-#signupForm{
-    right:20%;
-    top:28%;
+#signupForm {
+  right: 20%;
+  top: 28%;
 }
-#loginForm{
-    left:20%;
-    top:28%;
+@media screen and (max-width: 900px) {
+  #signupForm {
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 320px;
+  }
+}
+#loginForm {
+  left: 20%;
+  top: 28%;
+}
+@media screen and (max-width: 900px) {
+  #loginForm {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 18%;
+  }
+}
+#forgetPasswordForm {
+  left: 20%;
+  top: 28%;
+}
+@media screen and (max-width: 900px) {
+  #forgetPasswordForm {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 18%;
+  }
 }
 /* LOGIN BUTTON */
-.loginButton,.signupButton,.resetButton{
-    color:#fff;
-background-color: #CB202D
+.loginButton,
+.signupButton,
+.resetButton {
+  color: #fff;
+  background-color: #cb202d;
 }
-.loginButton:hover,.signupButton:hover,.resetButton:hover{
-    color:#fff;
-    background-color: #C82333
+.loginButton:hover,
+.signupButton:hover,
+.resetButton:hover {
+  color: #fff;
+  background-color: #c82333;
 }
-#forgetPassword{
-    color: #fff
+#forgetPassword {
+  color: #fff;
 }
-#forgetPassword:hover{
-    color: #CB202D
+#forgetPassword:hover {
+  color: #cb202d;
 }
-#forgetPasswordForm{
-    left:20%;
-    top:28%;
-}
-.passwordMatch,.fillEntries,.passwordLength{
-    color: #CB202D;
-    display: none
+/* Errors */
+.passwordMatch,
+.fillEntries,
+.passwordLength {
+  color: #cb202d;
+  display: none;
 }

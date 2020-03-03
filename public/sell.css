@@ -1,28 +1,31 @@
-body{
-    background-color: #000000;
-    font-family: 'Lato', sans-serif;
+body {
+  background-color: #000000;
+  font-family: "Lato", sans-serif;
 }
-.navbar{
-    background-color: #CB202D;
+.navbar {
+  background-color: #cb202d;
 }
-#brandIcon{
-    font-size: 25px
+#brandIcon {
+  font-size: 25px;
 }
-#sellForm{
-    position: absolute;
-    color:#fff;
-    right:35%;
-    top:15%;
+#sellForm {
+  position: absolute;
+  color: #fff;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 15%;
+  min-width: 400px;
 }
-.bookDescription,.sellerEmail{
-    color: #fff;
+.bookDescription,
+.sellerEmail {
+  color: #fff;
 }
-.sellButton{
-    color:#fff;
-background-color: #CB202D;
-width: 80px
+.sellButton {
+  color: #fff;
+  background-color: #cb202d;
+  width: 80px;
 }
-.sellButton:hover{
-    color:#fff;
-    background-color: #C82333
+.sellButton:hover {
+  color: #fff;
+  background-color: #c82333;
 }

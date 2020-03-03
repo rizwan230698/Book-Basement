@@ -1,173 +1,120 @@
 {{!-- BIG BUTTONS --}}
-<button class="bigButton" id="signupButton">Signup  <span class="arrowIcon"><i class="fa fa-chevron-right"></i></span></button>
-<button class="bigButton" id="loginButton">Login  <span class="arrowIcon"><i class="fa fa-chevron-right"></i></span></button> 
+<button class="bigButton" id="signupButton">Signup <span class="arrowIcon"><i
+      class="fa fa-chevron-right"></i></span></button>
+<button class="bigButton" id="loginButton">Login <span class="arrowIcon"><i
+      class="fa fa-chevron-right"></i></span></button>
 
 {{!-- SIGNUP FORM --}}
-<div
-      class="container"
-    >
-      <form id="signupForm">
-        <div class="form-group row">
-          <div class="col-4">
-            <label for="signupusername">Username</label>
-          </div>
-          <div class="col-8">
-            <input
-              type="text"
-              name="username"
-              class="form-control"
-              id="signupusername"
-              placeholder="Username"
-            required/>
-          </div>
-        </div>
-
-<div class="form-group row">
-          <div class="col-4">
-            <label for="signupemail">Email</label>
-          </div>
-          <div class="col-8">
-            <input
-              type="email"
-              name="email"
-              class="form-control"
-              id="signupemail"
-              placeholder="Email Address"
-            required/>
-          </div>
-        </div>
-
-        <div class="form-group row">
-            <div class="col-4">
-                <label for="signuppassword">Password</label>
-            </div>
-         <div class="col-8">
-                <input
-                type="password"
-                name="password"
-                class="form-control"
-                id="signuppassword"
-                placeholder="password"
-              required/>
-         </div>
-        </div>
-
-<div class="form-group row">
-            <div class="col-4">
-                <label for="signupconfirmpassword">Confirm Password</label>
-            </div>
-         <div class="col-8">
-                <input
-                type="password"
-                name="confirmPassword"
-                class="form-control"
-                id="signupconfirmpassword"
-                placeholder="Confirm Password"
-              required/>
-              <p class="passwordMatch">Password did not Match.</p>
-              <p class="fillEntries">Please fill entries.</p>
-              <p class="passwordLength">Password should be of atleast 8 characters.</p>
-         </div>
-        </div>
-
-        <button type="button" class="btn signupButton">Signup</button>
-      </form>
-    </div>
-    {{!-- LOGIN FORM --}}
-    <div
-      class="container"
-    >
-      <form id="loginForm" action="/login/auth" method="POST">
-        <div class="form-group row">
-          <div class="col-4">
-            <label for="loginusername">Username</label>
-          </div>
-          <div class="col-8">
-            <input
-              type="text"
-              name="username"
-              class="form-control"
-              id="loginusername"
-              placeholder="Username"
-            required/>
-          </div>
-        </div>
-        <div class="form-group row">
-            <div class="col-4">
-                <label for="loginpassword">Password</label>
-            </div>
-         <div class="col-8">
-                <input
-                type="password"
-                name="password"
-                class="form-control"
-                id="loginpassword"
-                placeholder="Password"
-              required/>
-             <br/>
-              <a href="#" id="forgetPassword">Forgot Password?</a>
-         </div>
-        
-        </div>
-        
-        <button type="submit" class="btn loginButton">Login</button>
-      </form>
+<div class="container">
+  <form id="signupForm">
+    <div class="form-group row">
+      <div class="col-4">
+        <label for="signupusername">Username</label>
+      </div>
+      <div class="col-8">
+        <input type="text" name="username" class="form-control" id="signupusername" placeholder="Username" required />
+      </div>
     </div>
 
-    {{!-- FORGET PASSWORD FORM --}}
-
-      <div
-      class="container"
-    >
-      <form id="forgetPasswordForm">
-        <div class="form-group row">
-          <div class="col-4">
-            <label for="resetemail">Email</label>
-          </div>
-          <div class="col-8">
-            <input
-              type="email"
-              name="email"
-              class="form-control"
-              id="resetemail"
-              placeholder="Email Address"
-            required/>
-          </div>
-        </div>
-        <div class="form-group row">
-            <div class="col-4">
-                <label for="resetpassword">New Password</label>
-            </div>
-         <div class="col-8">
-                <input
-                type="password"
-                name="password"
-                class="form-control"
-                id="resetpassword"
-                placeholder="New Password"
-              required/>
-         </div>
-        
-        </div>
-
-        <div class="form-group row">
-            <div class="col-4">
-                <label for="resetconfirmpassword">Confirm Password</label>
-            </div>
-         <div class="col-8">
-                <input
-                type="password"
-                name="confirmPassword"
-                class="form-control"
-                id="resetconfirmpassword"
-                placeholder="Confirm Password"
-              required/>
-              <p class="passwordMatch">Password did not Match.</p>
-              <p class="fillEntries">Please fill entries.</p>
-              <p class="passwordLength">Password should be of atleast 8 characters.</p>
-         </div>
-        </div>
-        
-        <button type="button" class="btn resetButton">Reset</button>
-      </form>
+    <div class="form-group row">
+      <div class="col-4">
+        <label for="signupemail">Email</label>
+      </div>
+      <div class="col-8">
+        <input type="email" name="email" class="form-control" id="signupemail" placeholder="Email Address" required />
+      </div>
     </div>
+
+    <div class="form-group row">
+      <div class="col-4">
+        <label for="signuppassword">Password</label>
+      </div>
+      <div class="col-8">
+        <input type="password" name="password" class="form-control" id="signuppassword" placeholder="password"
+          required />
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <div class="col-4">
+        <label for="signupconfirmpassword">Confirm Password</label>
+      </div>
+      <div class="col-8">
+        <input type="password" name="confirmPassword" class="form-control" id="signupconfirmpassword"
+          placeholder="Confirm Password" required />
+        <p class="passwordMatch">Password did not Match.</p>
+        <p class="fillEntries">Please fill entries.</p>
+        <p class="passwordLength">Password should be of atleast 8 characters.</p>
+      </div>
+    </div>
+
+    <button type="button" class="btn signupButton">Signup</button>
+  </form>
+</div>
+{{!-- LOGIN FORM --}}
+<div class="container">
+  <form id="loginForm" action="/login/auth" method="POST">
+    <div class="form-group row">
+      <div class="col-4">
+        <label for="loginusername">Username</label>
+      </div>
+      <div class="col-8">
+        <input type="text" name="username" class="form-control" id="loginusername" placeholder="Username" required />
+      </div>
+    </div>
+    <div class="form-group row">
+      <div class="col-4">
+        <label for="loginpassword">Password</label>
+      </div>
+      <div class="col-8">
+        <input type="password" name="password" class="form-control" id="loginpassword" placeholder="Password"
+          required />
+        <br />
+        <a href="#" id="forgetPassword">Forgot Password?</a>
+      </div>
+
+    </div>
+
+    <button type="submit" class="btn loginButton">Login</button>
+  </form>
+</div>
+
+{{!-- FORGET PASSWORD FORM --}}
+
+<div class="container">
+  <form id="forgetPasswordForm">
+    <div class="form-group row">
+      <div class="col-4">
+        <label for="resetemail">Email</label>
+      </div>
+      <div class="col-8">
+        <input type="email" name="email" class="form-control" id="resetemail" placeholder="Email Address" required />
+      </div>
+    </div>
+    <div class="form-group row">
+      <div class="col-4">
+        <label for="resetpassword">New Password</label>
+      </div>
+      <div class="col-8">
+        <input type="password" name="password" class="form-control" id="resetpassword" placeholder="New Password"
+          required />
+      </div>
+
+    </div>
+
+    <div class="form-group row">
+      <div class="col-4">
+        <label for="resetconfirmpassword">Confirm Password</label>
+      </div>
+      <div class="col-8">
+        <input type="password" name="confirmPassword" class="form-control" id="resetconfirmpassword"
+          placeholder="Confirm Password" required />
+        <p class="passwordMatch">Password did not Match.</p>
+        <p class="fillEntries">Please fill entries.</p>
+        <p class="passwordLength">Password should be of atleast 8 characters.</p>
+      </div>
+    </div>
+
+    <button type="button" class="btn resetButton">Reset</button>
+  </form>
+</div>

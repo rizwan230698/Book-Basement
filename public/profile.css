@@ -38,10 +38,10 @@ span i {
   border-radius: 0px;
 }
 .card {
-  max-width: 160px;
+  max-width: 200px;
   min-width: 160px;
-  max-height: 250px;
-  min-height: 250px;
+  height: 250px;
+  max-height: 280px;
   background-color: white;
   color: #000000;
   box-shadow: 0 0 10px #000000;
@@ -67,11 +67,8 @@ a:hover {
   flex-wrap: wrap;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 800px) {
   .container-fluid {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
+    justify-content: center;
   }
 }
