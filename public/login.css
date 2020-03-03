@@ -109,11 +109,13 @@ form {
     left: 50%;
     transform: translateX(-50%);
     top: 18%;
+    min-width: 320px;
   }
 }
 #forgetPasswordForm {
   left: 20%;
   top: 28%;
+  min-width: 320px;
 }
 @media screen and (max-width: 900px) {
   #forgetPasswordForm {
