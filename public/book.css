@@ -70,6 +70,9 @@ body {
     align-items: center;
     justify-content: center;
   }
+  .content {
+    padding: 0 0;
+  }
 }
 
 /* font-family: "lato", sans-serif; */
