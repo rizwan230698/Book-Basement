@@ -2,6 +2,10 @@ var express = require("express");
 var router = express.Router();
 
 router.get("/", function(req, res) {
+  if (req.session.loggedIn === true) {
+    res.redirect("/home");
+    return;
+  }
   res.render("login.hbs", {
     title: "Login Page",
     style: "login.css",
