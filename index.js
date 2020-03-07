@@ -26,7 +26,9 @@ hbs.registerHelper("is", function(parameter, string, options) {
 app.use(express.urlencoded({ extended: false }));
 app.use(
   session({
-    secret: "blue rose"
+    secret: "blue rose",
+    resave: true,
+    saveUninitialized: true
   })
 );
 app.use(express.static("public"));

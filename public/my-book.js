@@ -1,9 +1,11 @@
 $(".editBookButton").on("click", function() {
   $(this).css("display", "none");
-  $("#bookDescription").css("display", "none");
-  $("#text").css("display", "none");
-  $("#bookImage").css("display", "none");
-  $(".deleteBookButton").css("display", "none");
-  $("#price").css("display", "none");
+  $(".content").css("display", "none");
   $(".formDiv").css("display", "block");
+});
+
+$(".formCanceltButton").on("click", function() {
+  $(".editBookButton").css("display", "inline");
+  $(".content").css("display", "block");
+  $(".formDiv").css("display", "none");
 });

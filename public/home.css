@@ -24,8 +24,7 @@ body {
   border-radius: 0px;
 }
 .card {
-  max-width: 200px;
-  min-width: 160px;
+  width: 150px;
   height: 250px;
   max-height: 280px;
   background-color: white;
@@ -43,13 +42,25 @@ body {
 a:hover {
   text-decoration: none;
 }
-.container-fluid {
+.container {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+}
+@media screen and (max-width: 600px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .card {
+    margin: 10px auto;
+  }
 }
 
-@media screen and (max-width: 800px) {
-  .container-fluid {
-    justify-content: center;
+@media screen and (max-width: 360px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
