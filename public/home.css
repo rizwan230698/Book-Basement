@@ -32,7 +32,7 @@ body {
   box-shadow: 0 0 10px #000000;
   border-radius: 0px;
   border: none;
-  margin: 10px 15px;
+  margin: 10px;
 }
 
 .card:hover {
@@ -47,7 +47,7 @@ a:hover {
   flex-wrap: wrap;
   align-items: center;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 490px) {
   .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -57,7 +57,7 @@ a:hover {
   }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 345px) {
   .container {
     display: flex;
     flex-direction: column;
